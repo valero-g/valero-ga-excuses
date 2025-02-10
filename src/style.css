@@ -1,5 +1,13 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: blue;
+
+body>p:first-child{
+    margin-top:400px;
+    margin-bottom: 0px;;
+}
+
+p {
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
 }

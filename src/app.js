@@ -1,11 +1,15 @@
-import "bootstrap";
-import "./style.css";
 
+let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
+let action = ['ate', 'peed', 'crushed', 'broke'];
+let what = ['my homework', 'my phone', 'the car'];
+let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+function getWord(list,numElements){
+  return list[Math.floor(Math.random()*numElements)]
+}
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  var el = document.getElementById("excuse");
+  el.innerHTML= "<p>"+ getWord(who,4) + " " + getWord(action,4) + " " + getWord(what,3) + " " + getWord(when,5) + "!!!</p>";
 };
